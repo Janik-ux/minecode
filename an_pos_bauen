@@ -1,0 +1,7 @@
+inx_a, inx_b, iny_a, iny_b, inz_a, inz_b = antwort_umwandeln(antwortb)
+        new_pos = abtasten(inx_a, inx_b, iny_a, iny_b, inz_a, inz_b)
+        for posi in new_pos :
+            for ind in stone_rel_pos :
+                blocke = [posi[0:3], ind[3]]
+                print(blocke)
+                # mc.setBlock(posi[0:3], ind[3])

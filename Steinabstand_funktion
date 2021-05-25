@@ -1,0 +1,17 @@
+Steinabstand = stone_rel_pos[0]
+        # print(Steinabstand)
+        for stein in stone_rel_pos :
+            if stein[0] > Steinabstand[0] :
+                Steinabstand[0] = stein[0]
+            else :
+                None
+            if stein[1] > Steinabstand[1] :
+                Steinabstand[1] = stein[1]
+            else :
+                None
+            if stein[2] > Steinabstand[2] :
+                Steinabstand[2] = stein[2]
+            else :
+                None
+            # print(stein)
+            # print(Steinabstand)

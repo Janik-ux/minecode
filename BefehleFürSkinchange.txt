@@ -1,0 +1,20 @@
+Step 2 – Check the Downloaded File
+
+The browser should have placed the file in the “/home/pi/Downloads/” directory. In my example the file is called “indianajones.png”. (Yes I know the picture above is Batman but I was too excited to maintain the level of consistency I usually try to maintain in my tutorials). You can check it is there by launching the File Manager using the filing cabinet icon on the menu bar at the top of the screen or “Menu > Accessories > File Manager”.
+Step 3 – Backup Original Steve Skin
+
+Open a terminal windows using the icon at the top of the screen or “Menu > Accessories > Terminal”.
+
+Now we’ll make a backup of the original file by using :
+
+cd /opt/minecraft-pi/data/images/mob/
+sudo cp char.png steve.png
+
+This is important so you can always restore the original skin.
+Step 4 – Copy Files
+/7
+Now we can copy our new skin over the original :
+
+sudo cp /home/pi/indianajones.png char.png
+
+Obviously you need to replace “indianajones.png” with the filename you downloaded if you chose a different character. Note the full stop (period) at the end of the command above which means copy the indianajones.png file from /home/pi/ to our current location.

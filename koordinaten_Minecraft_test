@@ -1,0 +1,13 @@
+14,6,53,16,5,51
+
+
+for item in stone_rel_pos :
+        f.write("%s\n" % item)
+
+if antwort5 == "l" :
+	os.remove(projektname + ".txt")
+elif antwort5 == "b" :
+     	print("Ihr Projekt wurde gespeichert unter " + os.path.realpath(projektname + ".txt") + "."
+else :
+        print("Das hatte ich nicht gefragt. Naja egal Ihr projekt hab ich jetzt einfach unter" + os.path.realpath(projektname + ".txt") + "gespeichert.")
+74,0,12,76,1,14
